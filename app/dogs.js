@@ -1,5 +1,5 @@
 /* jshint -W069 */
-/*Global prompt:true*/
+/* global prompt:true */
 'use strict';
 //Creating an object manually//
 
@@ -48,13 +48,13 @@ console.log(d6 instanceof Object);
 console.log(d6 instanceof Dog);
 
 var option = prompt('(d)og or (q)uit: ');
-while(option != 'q'){
+while(option !== 'q'){
   var age = prompt('What is the age of the dog?: ');
   var name = prompt('What is the name of the dog?: ');
   var dog = new Dog(name, age);
   dogs.push(dog);
 
-var option = prompt('(d)og or (q)uit: ');
+ option = prompt('(d)og or (q)uit: ');
   }
 
 console.log('All Dogs: ', dogs);
