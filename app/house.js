@@ -18,7 +18,14 @@ House.prototype.area = function(){ //there is an invisible link between an objec
     houseArea += this.rooms[a].area(); 
   }
   return houseArea;
+};
 
+House.prototype.cost = function(){
+  var houseCost = 0;
+  for(var b = 0; b < this.rooms.length; b++){
+    houseCost += this.rooms[b].cost();
+  }
+  return houseCost;
 };
 
 module.exports = House;
